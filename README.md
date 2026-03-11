@@ -24,8 +24,6 @@ hadoop fs -mv /user/test/data/zipcodes.csv /data1
 hadoop fs -moveFromLocal zipcodes1.csv /data2
 ```
 
-
-
 ## HIVE
 ```
 create database xyz;
@@ -175,11 +173,6 @@ Create Struct Table in hive
 create table tab11 (id int,name string,sal bigint,sub array<string>,dud map<string,int>,addr struct<city:string,state:string,pin:bigint>) row format delimited fields terminated by ',' collection items terminated by '$' map keys terminated by '#';
 ```
 
- 
-
-
-
- 
 ## SPARK
 ```
 from pyspark.sql import SparkSession
